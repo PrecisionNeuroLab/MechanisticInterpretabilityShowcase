@@ -30,7 +30,7 @@
                 <h3>Vector Distances Between Emotions</h3>
                 <p>We visualized the L2 Euclidean and Cosine distances of word embeddings in the input layer before they
                     went through the transformer layers. We found that words with similar meanings were sometimes close
-                    together in the high-dimensional embedding space.</p>
+                    together in the high-dimensional embedding space, although not always.</p><br>
                 <div id="0f80a5c5-f246-4e76-90a3-6518e5ee6eb2" class="plotly-graph-div"
                      style="height:100%; width:100%;"></div>
                 <script type="text/javascript">
@@ -43,16 +43,16 @@
                 <p>We examined residual stream centroids and their neighbors throughout the transformer layers.
                     Interestingly, subject-specific nouns dominate among the nearest neighbors in the last two layers
                     under both cosine and Euclidean distance metrics. This suggests that the last two transformer layers
-                    in google/gemma-2-2b are identifying the main entities or actors in the context.</p>
+                    in google/gemma-2-2b are identifying the main entities or actors in the context.</p><br>
                 <img src="neighbors.png" style="height:100%; width:100%;"></div>
 
             <a href="/MechanisticInterpretabilityShowcase/26.normalized_semantic_cloud.html" class="card-link"
                target="_blank">
                 <div class="research-card">
                     <h3>Word Cloud Visualization</h3>
-                    <p>>We performed Principal Component Analysis on the residual streams, reducing their dimensionality
+                    <p>We performed Principal Component Analysis on the residual streams, reducing their dimensionality
                         to 2D and 3D word by word. This interactive visualization is very large. Click to interact in a
-                        new tab.</p>
+                        new tab.</p><br>
                     <img src="cloud_2d.png" style="height:100%; width:100%;">
                     <img src="cloud_3d.png" style="height:100%; width:100%;">
                 </div>
@@ -68,7 +68,7 @@
                         This clustering was especially prominent in layers 19-24 of the 26-layer model. These findings
                         suggest that measuring statistical distances of residual streams in high-dimensional embedding
                         space could enable automated detection and severity assessment of depression symptoms from
-                        naturalistic language samples.</p>
+                        naturalistic language samples. Click to inspect detailed findings in a new tab.</p><br>
                     <img src="energy_1.png" style="height:100%; width:100%;">
                     <img src="energy_2.png" style="height:100%; width:100%;">
                 </div>
@@ -81,7 +81,7 @@
             <h2 class="section-title">About</h2>
             <p class="about-text">
                 This showcase presents tools developed by Fangyi Zhu and Ajay Subramanian at the Stanford Precision
-                Neurotherapeutics Lab for our ongoing research on the mechanistic interpretability of LLM depression
+                Neurotherapeutics Lab for our ongoing research into the mechanistic interpretability of LLM depression
                 representations.
             </p>
         </div>
