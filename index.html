@@ -40,8 +40,8 @@
 
             <div class="research-card">
                 <h3>Vector Distances relative to the Centroid of Residual Stream</h3>
-                <p>We examined residual stream centroids and their neighbors for each transformer layer.
-                    Interestingly, subject-specific nouns dominate among the nearest neighbors in the last two layers
+                <p>We found the residual stream centroid and its neighbors for each transformer layer and MDD diagnostic scale.
+                    Interestingly, subject-specific nouns are the dominant nearest neighbors in the last two layers
                     under both cosine and Euclidean distance metrics. This suggests that the last two transformer layers
                     in google/gemma-2-2b are identifying the main entities or actors in the context.</p><br>
                 <img src="neighbors.png" style="width:80%;"></div>
@@ -50,10 +50,8 @@
                target="_blank">
                 <div class="research-card">
                     <h3>Word Cloud Visualization</h3>
-                    <p>We performed Principal Component Analysis on the residual streams, reducing their dimensionality
-                        to 2D and 3D word by word. This interactive visualization is very large and contains animation.
-                        Click to interact in a
-                        new tab.</p><br>
+                    <p>We performed 2D and 3D Principal Component Analysis on the residual streams word by word.
+                        (Note: This interactive visualization is large and contains animation. Click to interact in a new tab.)</p><br>
                     <img src="cloud_2d.png" style="height:100%; width:47%;">
                     <img src="cloud_3d.png" style="height:100%; width:47%;">
                 </div>
@@ -69,13 +67,13 @@
                         This clustering was especially prominent in layers 19-24 of the 26-layer model. These findings
                         suggest that measuring statistical distances of residual streams in high-dimensional embedding
                         space could enable automated detection and severity assessment of depression symptoms from
-                        naturalistic language samples. Click to inspect detailed findings in a new tab.</p><br>
+                        naturalistic language samples. (Note: Click to inspect detailed findings in a new tab.)</p><br>
                     <img src="energy_1.png" style="height:100%; width:47%;">
                     <img src="energy_2.png" style="height:100%; width:47%;">
                 </a>
 
                 <details>
-                    <summary>Click here to view detailed text comparisons between the closest and furthest pairs.</summary>
+                    <summary>Click to expand text comparisons between the closest and furthest pairs.</summary>
 
                     <h4>Overall Furthest Text: Δ(Somatic Symptoms, Suicidality Symptoms) | PHQ-9</h4>
                     <p>PHQ-9 Somatic Symptoms:<br>
